@@ -1,0 +1,76 @@
+1)
+
+select ucenik.ime, ucenik.prezime, predmet.naziv, ocena.datum, ocena.ocena
+from ocena
+join ucenik on ocena.id_ucenik = ucenik.id
+join predmet on ocena.id_predmet = predmet.id
+where ucenik.razred = 1 and ucenik.odeljenje = 2 and ocena.vrsta = 'контролна вежба'
+
+2)
+
+select ucenik.razred, ucenik.odeljenje, predmet.naziv, ocena.datum, round(avg(ocena.ocena), 2) 
+as prosek, 
+count(*) as broj
+from ocena 
+join predmet on ocena.id_predmet = predmet.id 
+join ucenik on ocena.id_ucenik = ucenik.id
+where ocena.vrsta = 'писмени задатак'
+group by ucenik.razred, ucenik.odeljenje, predmet.id, ocena.datum
+having broj >= 25
+
+3)
+
+select predmet.naziv, predmet.razred, strftime('%m', ocena.datum) as mesec, count(*) as broj
+from ocena 
+join predmet on ocena.id_predmet = predmet.id
+where ocena.ocena = 5
+group by predmet.id, mesec
+order by predmet.naziv, mesec
+
+4)
+
+select razred, odeljenje, strftime('%m', datum) as mesec, count(*) as broj
+from izostanak 
+join ucenik on izostanak.id_ucenik = ucenik.id
+where status = 'неоправдан'
+group by mesec, razred, odeljenje
+having broj >= 5
+
+5)
+
+select ucenik.ime, ucenik.prezime, predmet.naziv, round(avg(ocena), 2) as prosek
+from ocena 
+join ucenik on ocena.id_ucenik = ucenik.id 
+join predmet on ocena.id_predmet = predmet.id
+group by ucenik.id, predmet.id
+having count(*) >= 2
+
+6)
+
+select u1.datum_rodjenja, u1.razred, u1.odeljenje,
+       u1.ime, u1.prezime,
+       u2.ime, u2.prezime
+from ucenik as u1 
+join ucenik as u2 on u1.razred = u2.razred 
+	and u1.odeljenje = u2.odeljenje 
+	and u1.datum_rodjenja = u2.datum_rodjenja 
+	and u1.id < u2.id
+order by u1.razred, u1.odeljenje
+
+7)
+
+select naziv, razred, count(ocena) as broj_ocena
+from predmet 
+join ocena on predmet.id = ocena.id_predmet
+group by predmet.id
+order by broj_ocena desc
+
+8)
+
+select ucenik.ime, ucenik.prezime, count(ocena)
+from ucenik
+join (
+	ocena join predmet on predmet.id = ocena.id_predmet 
+	and predmet.naziv = 'Рачунарство и информатика') 
+on ucenik.id = id_ucenik
+group by ucenik.id

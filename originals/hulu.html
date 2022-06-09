@@ -1,147 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valoa | Hulu</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="../images/valoa.png">
-  </head>
-  <body>
-    
-    <div class="header">
-      <img src="images/logo.png" alt="" />
-    </div>
-    
-    <div class="nav">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="../stile/style.css">
+  <title>Valoa | Hulu</title>
+  <link rel="shortcut icon" type="image/png" href="../images/valoa.png">
+
+  
+  
+  
+</head>
+
+<body>
+
+<header>
+  <div>
+    <nav class="navbar">
+      <a href="../index.html"><img src="../images/valoatr.png" class="brand-title"></a>
+      <div class="toggle-button" onclick="this.classList.toggle('activ')">
+        
+        <svg  width="90" height="90" viewBox="0 0 200 200">
+           <g stroke-width="7" stroke-linecap="round">
+            <path
+             d="M72 82.286h28.75"
+             fill="#009100"
+             fill-rule="evenodd"
+             stroke="#fff"
+            />
+            <path
+             d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+             fill="none"
+             stroke="#fff"
+            />
+            <path
+             d="M72 125.143h28.75"
+             fill="#009100"
+             fill-rule="evenodd"
+             stroke="#fff"
+            />
+            <path
+             d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+             fill="none"
+             stroke="#fff"
+            />
+            <path
+             d="M100.75 82.286h28.75"
+             fill="#009100"
+             fill-rule="evenodd"
+             stroke="#fff"
+            />
+            <path
+             d="M100.75 125.143h28.75"
+             fill="#009100"
+             fill-rule="evenodd"
+             stroke="#fff"
+            />
+           </g>
+          </svg>
+       </div>
+       <div class="navbar-links">
       
-      <h2>Originals</h2>
-      
-    </div>
+        <ul>
+         
+         <li><a href="#v">//MOVIES//</a>
+          <ul>
+                        <li><a href="../movies/actions.html">//Movies//</a></li>               
+                        <li><a href="../movies/animations.html">//Animation//</a></li>
+                           
+          </ul>            
+        </li>
+        <li><a href="#u">//Originals//</a>
+         <ul>
+                       <li><a href="netflix.html">//Netflix//</a></li>        
+                       <li><a href="hulu.html">//Hulu//</a></li>       
+                       <li><a href="hbo.html">//HBO//</a></li>         
+         </ul>            
+       </li>                     
+           
+         
+         <form action="" class="search-bar">
+          <input type="text" id="myInput" placeholder="search movie name" onkeyup="myFunction()"  type="search" name="search" pattern=".*\S.*" required>
+          <button class="search-btn">
+           <span>Search</span>
+          </button>
+         </form>
+    </ul>
+     </div>
+      </nav>
+   </div>
+
+</header>
+
+<div class="movie">
+ <div class="container">
+
+
+  <div class="row" >
+        
+
+
+
+  <ul id="myUL">
+
+   <h3>Series</h3>
+   
+   
+   
+   <div class="row">      
+
+    <div class="col-md-2" >
+      <li><a href=""><img src="" height="300px">
+     <p> </p></a> </li>
+     </div>
+     <div class="col-md-2" >
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/cupheads.jpg" height="300px">
+     <p>The Cuphead Show! (2022-)</p></a> </li>
+     </div>
+     <div class="col-md-2" >
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/arcane.jpg"  height="300px">
+      <p>Arcane (2021-)</p></a> </li>
+      </div>
+    <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/insidejob.jpg" height="300px">
+    <p>Inside Job (2021-)</p></a> </li>
+   </div>
+   <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/squidgame.jpg"  height="300px">
+   <p>Squid Game (2021-)</p></a> </li>
+   </div>
+
+   
+   
+   
+   
+   <div class="col-md-2"></div>
+   </div>
+  
+   
+   <div class="row">      
+
+    <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/mastersofunivers.jpg"  height="300px">
+      <p>Masters of the Universe: Revelation (2021-)</p></a> </li>
+      </div>
+    <div class="col-md-2">
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/gospel.jpg"  height="300px">
+     <p>The Midnight Gospel (2020-)</p></a> </li>
+     </div>
+     <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/darkcristal.jpg"  height="300px">
+      <p>The Dark Crystal: Age of Resistance (2019)</p></a> </li>
+      </div>
+    <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/anotherlife.jpg"  height="300px">
+    <p>Another Life (2019-2021)</p></a> </li>
+   </div>
+    <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/disenchantment.jpg"  height="300px">
+   <p>Disenchantment (2018-)</p></a> </li>
+   </div>
+ 
+   
+   
+   
+   <div class="col-md-2"></div>
+   </div>
+   
+   
+   
+   <div class="row">      
     
-    <div class="movies">
-      <div class="movie">
-        <img src="images/movie1.jpg" alt="" />
-        <p>Washed-up MMA fighter Cole Young, unaware of his heritage, and...</p>
-        <h2>Mortal Kombat</h2>
+    <div class="col-md-2">
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/lostinspace2.jpg" height="300px">
+     <p>Lost in Space (2018-2021)</p></a> </li>
+     </div>
+     <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/ironfist.jpg"  height="300px">
+      <p> Iron Fist (2017-2018)</p></a> </li>
       </div>
+     <div class="col-md-2">
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/lucifer.jpg"  height="300px">
+     <p>Lucifer (2016-2021)</p></a> </li>
+     </div>
+     <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/family.jpg"  height="300px">
+      <p>F is for Family (2015-2021)</p></a> </li>
+      </div>
+   <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/bojachorsman.jpg"  height="300px">
+   <p>BoJack Horseman (2014-2020)</p></a> </li>
+   </div>
+  
+   
+   
+   
+   <div class="col-md-2"></div>
+   </div>
+   
 
-      <div class="movie">
-        <img src="images/movie2.jpg" alt="" />
-        <p>An elite Navy SEAL uncovers an international conspiracy while...</p>
-        <h2>Tom Clancy's Without Remorse</h2>
-      </div>
+   
+   <span>__________________________</span>
+   
+   
 
-      <div class="movie">
-        <img src="images/movie3.jpg" alt="" />
-        <p>When the world's first generation of superheroes received their...</p>
-        <h2>Jupiter's Legacy</h2>
-      </div>
+   <h3>Movies</h3>
+   
+   
+   <div class="row">      
 
-      <div class="movie">
-        <img src="images/movie4.jpg" alt="" />
-        <p>A quirky, dysfunctional family's road trip is upended when they find...</p>
-        <h2>The Mitchells vs. The Machines</h2>
+    <div class="col-md-2" >
+      <li><a href=""><img src="" height="300px">
+     <p> </p></a> </li>
+     </div>
+     <div class="col-md-2" >
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/cupheads.jpg" height="300px">
+     <p>The Cuphead Show! (2022-)</p></a> </li>
+     </div>
+     <div class="col-md-2" >
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/arcane.jpg"  height="300px">
+      <p>Arcane (2021-)</p></a> </li>
       </div>
+    <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/insidejob.jpg" height="300px">
+    <p>Inside Job (2021-)</p></a> </li>
+   </div>
+   <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/squidgame.jpg"  height="300px">
+   <p>Squid Game (2021-)</p></a> </li>
+   </div>
 
-      <div class="movie">
-        <img src="images/movie5.jpg" alt="" />
-        <p>In a time when monsters walk the Earth, humanity’s fight for its...</p>
-        <h2>Godzilla vs. Kong</h2>
-      </div>
+   
+   
+   
+   
+   <div class="col-md-2"></div>
+   </div>
+  
+   
+   <div class="row">      
 
-      <div class="movie">
-        <img src="images/movie6.jpg" alt="" />
-        <p>A woman wakes in a cryogenic chamber with no recollection of how...</p>
-        <h2>Oxygen</h2>
+    <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/mastersofunivers.jpg"  height="300px">
+      <p>Masters of the Universe: Revelation (2021-)</p></a> </li>
       </div>
+    <div class="col-md-2">
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/gospel.jpg"  height="300px">
+     <p>The Midnight Gospel (2020-)</p></a> </li>
+     </div>
+     <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/darkcristal.jpg"  height="300px">
+      <p>The Dark Crystal: Age of Resistance (2019)</p></a> </li>
+      </div>
+    <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/anotherlife.jpg"  height="300px">
+    <p>Another Life (2019-2021)</p></a> </li>
+   </div>
+    <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/disenchantment.jpg"  height="300px">
+   <p>Disenchantment (2018-)</p></a> </li>
+   </div>
+ 
+   
+   
+   
+   <div class="col-md-2"></div>
+   </div>
+   
+   
+   
+   <div class="row">      
+    
+    <div class="col-md-2">
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/lostinspace2.jpg" height="300px">
+     <p>Lost in Space (2018-2021)</p></a> </li>
+     </div>
+     <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/ironfist.jpg"  height="300px">
+      <p> Iron Fist (2017-2018)</p></a> </li>
+      </div>
+     <div class="col-md-2">
+      <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/lucifer.jpg"  height="300px">
+     <p>Lucifer (2016-2021)</p></a> </li>
+     </div>
+     <div class="col-md-2">
+      <li> <a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/family.jpg"  height="300px">
+      <p>F is for Family (2015-2021)</p></a> </li>
+      </div>
+   <div class="col-md-2">
+    <li><a href="../serije/Animaniacs/rrol/index.html"><img src="../series/serijeposters/bojachorsman.jpg"  height="300px">
+   <p>BoJack Horseman (2014-2020)</p></a> </li>
+   </div>
+  
+   
+   
+   
+   <div class="col-md-2"></div>
+   </div>
+   
+   
+   <span>__________________________</span>
+   
+   
+   
+   
+   </ul>
+  
 
-      <div class="movie">
-        <img src="images/movie7.jpg" alt="" />
-        <p>Follow the elite and experimental Clones of the Bad Batch as they...</p>
-        <h2>The Bad Batch</h2>
-      </div>
+</div>
+</div>
+</div>
 
-      <div class="movie">
-        <img src="images/movie8.jpg" alt="" />
-        <p>An agoraphobic woman living alone in New York begins spying on...</p>
-        <h2>The Woman in the Window</h2>
-      </div>
+<!--uncomment this if neaded
+ <div class="pagination">
+ <span>Page 1 of 2</span>
+ <div class="current">1</div>
+  <a href="series-pg2.html" class="inactive">2</a>
+  <a class="arrow_pag" href="series-pg2.html">
+   <img src="../images/next.png"></a></div>
+-->
 
-      <div class="movie">
-        <img src="images/movie9.jpg" alt="" />
-        <p>A teenage murder witness finds himself pursued by twin assassins in...</p>
-        <h2>Those Who Wish Me Dead</h2>
-      </div>
+<div class="credits2">
+   
 
-      <div class="movie">
-        <img src="images/movie10.jpg" alt="" />
-        <p>Following the events of “Avengers: Endgame”, the Falcon, Sam...</p>
-        <h2>The Falcon and the Winter Soldier</h2>
-      </div>
+  <div class="container">
+      <div class="row">
+  <div class="col-md-2">
+      <p><a href="../copyright.html">©</a>Valoa 2022<br> All rights recive</p>
+  </div>
+</div>
 
-      <div class="movie">
-        <img src="images/movie11.jpg" alt="" />
-        <p>Terrifying creatures, wicked surprises and dark comedy converge in...</p>
-        <h2>Love, Death & Robots</h2>
-      </div>
+<div class="row">
+  <div class="col-md-2">
+                                          <p>Legal</p>
+                      <a href="../tos.html">Terms Of Services</a>
+                      <br>    
+                      <a href="../privacy.html">Privacy Policy</a>
+                      <br>    
+                      <a href="../copyright.html">Copyright</a>
+                      
+                      <br>
+                      <a href="https://www.speedtest.net/">Speed test</a>
+                      </div>
+                      <div class="col-md-2"></div>
+                      <div class="col-md-2"></div>
+                      <div class="col-md-2"></div>
+                     
+  <div class="col-md-3">
+      <p>Follow us:</p> 
+      
+ 
+  <a href="https://www.instagram.com/valoa_entertainment/">
+      <img src="../images/ig.png" href="">
+ </a>
+ <a href="https://www.pinterest.com/Valoa_Entertainment/_saved/">
+  <img src="../images/pn.png" href="">
+</a>
+<a href="https://github.com/ValoaEntertainment">
+<img src="../images/github.png" href="">
+</a>
+</a>
+<a href="https://discord.gg/Tcavhpt7mt">
+<img src="../images/discord.png" href="">
+</a>
 
-      <div class="movie">
-        <img src="images/movie12.jpg" alt="" />
-        <p>Hutch Mansell, a suburban dad, overlooked husband, nothing...</p>
-        <h2>Nobody</h2>
-      </div>
+</div>
+                          
+                                      
 
-      <div class="movie">
-        <img src="images/movie13.jpg" alt="" />
-        <p>When the world's first generation of superheroes received their...</p>
-        <h2>Jupiter's Legacy</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie14.jpg" alt="" />
-        <p>A quirky, dysfunctional family's road trip is upended when they find...</p>
-        <h2>The Mitchells vs. The Machines</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie15.jpg" alt="" />
-        <p>In a time when monsters walk the Earth, humanity’s fight for its...</p>
-        <h2>Godzilla vs. Kong</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie16.jpg" alt="" />
-        <p>A woman wakes in a cryogenic chamber with no recollection of how...</p>
-        <h2>Oxygen</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie17.jpg" alt="" />
-        <p>Follow the elite and experimental Clones of the Bad Batch as they...</p>
-        <h2>The Bad Batch</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie18.jpg" alt="" />
-        <p>An agoraphobic woman living alone in New York begins spying on...</p>
-        <h2>The Woman in the Window</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie19.jpg" alt="" />
-        <p>A teenage murder witness finds himself pursued by twin assassins in...</p>
-        <h2>Those Who Wish Me Dead</h2>
-      </div>
-
-      <div class="movie">
-        <img src="images/movie20.jpg" alt="" />
-        <p>Following the events of “Avengers: Endgame”, the Falcon, Sam...</p>
-        <h2>The Falcon and the Winter Soldier</h2>
-      </div>
-    </div>
-    <!-- movies ends -->
-  </body>
+</div>
+</div>
+</div>
+<script src="script.js" defer></script>
+<script src="search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
 </html>
+
+
+
